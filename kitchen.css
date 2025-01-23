@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.item-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.item h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.price {
+    color: #2c3e50;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.description {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.add-to-cart:hover {
+    background-color: #2ecc71;
+}
+
+
+/* General Footer Styling */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #282c34;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.footer h1, .footer h3 {
+    color: #ffffff;
+}
+
+.footer p, .footer ul, .footer a {
+    color: #d3d3d3;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #d3d3d3;
+}
+
+.footer a:hover {
+    color: #ffcc00;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer ul li i {
+    margin-right: 10px;
+}
+
+.footer .wid-25 {
+    flex-basis: 25%;
+    margin-bottom: 20px;
+}
+
+.arrange-left {
+    text-align: left;
+}
+
+.margin-right-5 {
+    margin-right: 5%;
+}
+
+/* Footer Links */
+.quick-links ul li a {
+    display: flex;
+    align-items: center;
+}
+
+.quick-links ul li a i {
+    margin-right: 5px;
+}
+
+/* Footer Input Fields */
+.footer-input-heading {
+    margin-bottom: 15px;
+}
+
+.footer-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a3f47;
+    color: #ffffff;
+}
+
+.footer-input::placeholder {
+    color: #d3d3d3;
+}
+
+.footer-button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #282c34;
+    font-weight: bold;
+}
+
+.footer-button:hover {
+    background-color: #e6b800;
+}
+
+/* Copy-right Section */
+.copy-right {
+    background-color: #c3c5c7;
+    text-align: center;
+    padding: 1%;
+}
+
+.copy-right-text {
+    color: #090909;
+}
+
+.heart-symbol {
+    color: #ff6b6b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer .wid-25 {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
